@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct pianoeaseApp: App {
@@ -13,5 +14,6 @@ struct pianoeaseApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: [PracticeSessionModel.self, MeasureStatModel.self])
     }
 }
